@@ -1,4 +1,63 @@
 ::selection {
 	background-color: #000;
 	color: #fff;
+	font-size: 30px;
+}
+body, html{
+    height: 100%;
+}
+.header {
+    background-image: url(her-bg-1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/*
+.head{
+    border-top: 60px solid #ff0;
+    border-bottom: 60px solid #f0f;
+    border-left: 60px solid #0ff;
+    border-right: 62px solid #333;
+    width: 1%;
+    height: 20px;
+}
+*/
+
+.header:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(75, 255, 0, 0.25);
+}
+.header:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(199, 178, 178, 0.28);
+}
+
+span:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0%;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(255, 0, 94, 0.28);
+}
+span:after {
+    position: absolute;
+    content: '';
+    right: 0%;
+    top: 0%;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(125, 255, 237, 0.27);
 }
