@@ -1,17 +1,56 @@
 body, html {
+	margin: 0;
+	font-family: sans-serif;
+	color: green;
 	height: 100%;
 }
 
-body {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    background: mediumturquoise;
-    align-items: flex-start;
-    justify-content: flex-end;
-    font-size: 100%;
-    font-family: cursive;
+header, footer {
+	background-color: #d6d6d6;
 }
+
+.container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #000;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+.container > * {
+	padding: 10px;
+}
+
+main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	/*display: flex;*/
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	margin-bottom: auto;
+}
+
+ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0;
+	justify-content: space-between;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+} 
